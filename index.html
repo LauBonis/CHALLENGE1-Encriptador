@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+     <meta charset = "UTF-8">
+     <title>Encriptador de texto</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="text-left">
+            <div><img class="logo" src="imagenes/Logo.svg" alt="logo Alura"></div>
+                <textarea type="text" class="input-text" cols="40" rows="6" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="warning">
+                    <img class="warning-img" src="imagenes/warning.svg" alt="Warning image">
+                    <p class="warning-text" id="warning">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div>
+                    <button type="button" class="btnEncrypt" onclick="btnEncrypt()">Encriptar</button>
+                    <button type="button" class="btnDecrypt" onclick="btnDecrypt()">Desencriptar</button>
+                </div>
+        </section>
+    
+        <section class="text-right">
+            <div class="area-transition">
+                <div class="munheco"><img src="imagenes/Munheco.svg" id="imgMunheco" alt="logo Munheco"></div>
+                <p class="msg1" id="msg1">Ningún mensaje fue encontrado</p>
+                <p class="msg2" id="msg2">Inserte el texto que desea encriptar o desencriptar.</p>
+                <textarea type="text" hidden class="input-text-area" id="textRes" cols="18" rows="8"></textarea>
+                <button type="button" hidden class="btnCopy" id="copyButton" onclick="btnCopy()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy Copyright Laura A. Bonis - 2022</p>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+</html>
